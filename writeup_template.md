@@ -1,9 +1,4 @@
-#**Finding Lane Lines on the Road**
-
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
+# **Finding Lane Lines on the Road**
 ---
 
 **Finding Lane Lines on the Road**
@@ -15,15 +10,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+![image1](./examples/grayscale.jpg)
 
 ---
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consists of _ parts:
+My pipeline consists of 7 parts:
 
 1. First I transform the image using a grayscale function.
 2. Next the image goes through a gaussian process to smooth out / simplify the image.
@@ -38,20 +33,20 @@ the lines returned by the Hough Transform by slope.  The trained models were the
 
 
 Below is an image from steps 1-5
-![Part 1 of pipeline][pipeline_1.png]
+![Part 1 of pipeline](writeup_images/pipeline_1.png)
 
 And finally the original image, Hough Transform, and weighted image:
-![Part 2 of pipeline][pipeline_2.png]
+![Part 2 of pipeline](writeup_images/pipeline_2.png)
 
 
 
-###2. Identify potential shortcomings with your current pipeline
+### 2. Identify potential shortcomings with your current pipeline
 
 One issue I noticed was that the lines, although they followed the lane lines quite closely, was that they were rather shaky, almost like vibrating on the line.  
 
 Another shortcoming was the color detection in my model.  It was able to handle the yellow and white lines well, however the challenge project caused utter chaos!
 
-###3. Suggest possible improvements to your pipeline
+### 3. Suggest possible improvements to your pipeline
 
 Much of my code could have been cleaned up to be made more readable / maintainable.
 
