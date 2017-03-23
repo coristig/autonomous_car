@@ -47,13 +47,12 @@ And finally the original image, Hough Transform, and weighted image:
 
 ###2. Identify potential shortcomings with your current pipeline
 
+One issue I noticed was that the lines, although they followed the lane lines quite closely, was that they were rather shaky, almost like vibrating on the line.  
 
-One potential shortcoming would be what would happen when ...
-Another shortcoming could be ...
-
+Another shortcoming was the color detection in my model.  It was able to handle the yellow and white lines well, however the challenge project caused utter chaos!
 
 ###3. Suggest possible improvements to your pipeline
 
-Much of my code could have been cleaned up to be made more readable.
+Much of my code could have been cleaned up to be made more readable / maintainable.
 
-Secondly, filter
+Filtering out colors other than yellow and white could allow for better line detection, and shrinking the polygon (or 'area of interest') would also help with colors as well as with avoiding detecting the cars' hood.
